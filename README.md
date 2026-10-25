@@ -1,5 +1,11 @@
 # KEJA HALISI.co.ke — Real House Verified
 
+*Keja Halisi — Nairobi TikTok rental anti-scam platform (Hakuna Kulipa Kabla Ya Kuona Nyumba); keja-halisi.co.ke; TypeScript.*
+
+![category](https://img.shields.io/badge/category-web-platform-EC4899?style=flat-square) ![language](https://img.shields.io/badge/language-TypeScript-2563EB?style=flat-square) ![maintenance](https://img.shields.io/badge/maintenance-active-16A34A?style=flat-square) ![repo](https://img.shields.io/badge/repo-keja--halisi-111827?style=flat-square)
+
+---
+
 **Nairobi TikTok Rental Anti-Scam Platform.** Stop scrolling fake kejas. Only verified TikTok houses in Nairobi.
 
 > **Hakuna Kulipa Kabla Ya Kuona Nyumba.** — No paying before you see the house.
@@ -107,3 +113,7 @@ See `.env.example`. Supabase production secrets (`NEXT_PUBLIC_SUPABASE_URL`, `SU
 
 - TikTok videos are embedded via official **oEmbed iframes** — creator media is never re-uploaded.
 - Demo data: real estate names + realistic KES prices; agents, phones and metrics are illustrative.
+
+## Contribution and license
+
+Issues and pull requests are welcome — please open an issue describing the proposed change before submitting substantive work. No license file is present; the work remains under the author's default copyright. Contact the owner for reuse terms.
