@@ -12,9 +12,12 @@
 
 name: tiktok-agent
 
+# SCHEDULE PAUSED 2026-10-25 (issue #1): every hourly run failed because the
+# DATABASE_URL/DIRECT_URL secrets were never provisioned. Restore the cron line
+# below ONLY after the secrets exist, per the issue's owner-action steps.
 on:
-  schedule:
-    - cron: "23 * * * *" # hourly at :23 — off the busy top-of-hour
+  # schedule:
+  #   - cron: "23 * * * *" # hourly at :23 - off the busy top-of-hour
   workflow_dispatch: {} # manual trigger button in the Actions tab
 
 concurrency:
@@ -26,6 +29,15 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 25
     steps:
+      - name: Fail fast when required secrets are missing (issue #1)
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: |
+          if [ -z "$DATABASE_URL" ]; then
+            echo "::error::DATABASE_URL secret is empty/unset. This agent writes to the live Neon database; refusing to start. See issue #1 for the owner-action setup steps."
+            exit 1
+          fi
+
       - uses: actions/checkout@v4
 
       - uses: oven-sh/setup-bun@v2
