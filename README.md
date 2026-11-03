@@ -1,6 +1,6 @@
-# KEJA HALISI.co.ke — Real House Verified
+# KEJA HALISI.co.ke: Real House Verified
 
-*Keja Halisi — Nairobi TikTok rental anti-scam platform (Hakuna Kulipa Kabla Ya Kuona Nyumba); keja-halisi.co.ke; TypeScript.*
+*Keja Halisi: Nairobi TikTok rental anti-scam platform (Hakuna Kulipa Kabla Ya Kuona Nyumba); keja-halisi.co.ke; TypeScript.*
 
 ![category](https://img.shields.io/badge/category-web-platform-EC4899?style=flat-square) ![language](https://img.shields.io/badge/language-TypeScript-2563EB?style=flat-square) ![maintenance](https://img.shields.io/badge/maintenance-active-16A34A?style=flat-square) ![repo](https://img.shields.io/badge/repo-keja--halisi-111827?style=flat-square)
 
@@ -8,13 +8,13 @@
 
 **Nairobi TikTok Rental Anti-Scam Platform.** Stop scrolling fake kejas. Only verified TikTok houses in Nairobi.
 
-> **Hakuna Kulipa Kabla Ya Kuona Nyumba.** — No paying before you see the house.
+> **Hakuna Kulipa Kabla Ya Kuona Nyumba.** (No paying before you see the house.)
 
 ---
 
 ## 🚀 Ship to production (GitHub → Supabase → Vercel)
 
-Full stepwise guide with checkpoints + troubleshooting: **[DEPLOY.md](./DEPLOY.md)** — or the 3-command path:
+Full stepwise guide with checkpoints + troubleshooting: **[DEPLOY.md](./DEPLOY.md)**, or the 3-command path:
 
 ```bash
 bash scripts/deploy/01-push-github.sh  https://github.com/<you>/keja-halisi.co.ke.git
@@ -26,7 +26,7 @@ Cron jobs (7-day expiry, availability nudge) are pre-wired in `vercel.json`. Sup
 
 ---
 
-## 🛡️ ANTI-SCAM RULES (PRODUCT LAW — non-negotiable)
+## 🛡️ ANTI-SCAM RULES (PRODUCT LAW: non-negotiable)
 
 | Rule | Enforcement |
 |---|---|
@@ -35,12 +35,12 @@ Cron jobs (7-day expiry, availability nudge) are pre-wired in `vercel.json`. Sup
 | **Phone masked until contact** | Numbers render as `07** *** 123`. Tapping **Call / WhatsApp** logs a lead (masked) and only then reveals contact. |
 | **ID docs → private vault** | IDs, selfies and mandate letters live in the private `verification-docs` / `mandate-letters` buckets. Never rendered publicly. |
 | **3 reports = auto-hide** | On the 3rd report the listing auto-hides (`publish_state → rejected`) and queues admin review. |
-| **Evidence checklist required** | Outside • Gate • Inside • Water running • Window view — publish is blocked until all 5 are checked. |
+| **Evidence checklist required** | Outside • Gate • Inside • Water running • Window view: publish is blocked until all 5 are checked. |
 | **7-day expiry + re-check** | Listings auto-expire after 7 days; availability nudge SMS "Is keja still available? Reply YES/NO" before expiry. |
 
 ---
 
-## 🏙️ COVERAGE — 6 Boroughs × 17 Sub-counties (configurable)
+## 🏙️ COVERAGE: 6 Boroughs × 17 Sub-counties (configurable)
 
 | Borough | Sub-counties | Estates |
 |---|---|---|
@@ -55,17 +55,17 @@ Cron jobs (7-day expiry, availability nudge) are pre-wired in `vercel.json`. Sup
 
 ## 👥 4 ROLES
 
-- **Agent** — lists many estates • commission • 2 old TikTok videos + 2 referrals
-- **Owner** — owns unit • direct • ID + KPLC bill matching name
-- **Developer** — multiple units • M-Pesa Till • Title/Lease + company reg
-- **Caretaker** — estate-limited • **owner mandate letter required** • cannot list outside mandate
+- **Agent**: lists many estates • commission • 2 old TikTok videos + 2 referrals
+- **Owner**: owns unit • direct • ID + KPLC bill matching name
+- **Developer**: multiple units • M-Pesa Till • Title/Lease + company reg
+- **Caretaker**: estate-limited • **owner mandate letter required** • cannot list outside mandate
 
 ## ✅ Verification levels
 
-1. **Basic** — OTP + phone age (Africa's Talking + Truecaller >6 months)
-2. **Verified** 🟢 — ID + selfie face-match (private vault)
-3. **Trusted** — role evidence (mandate / KPLC / title deed)
-4. **Gold** 👑 (optional) — KRA PIN / Business Reg + Pro subscription
+1. **Basic**: OTP + phone age (Africa's Talking + Truecaller >6 months)
+2. **Verified** 🟢: ID + selfie face-match (private vault)
+3. **Trusted**: role evidence (mandate / KPLC / title deed)
+4. **Gold** 👑 (optional): KRA PIN / Business Reg + Pro subscription
 
 ## 💚 Trust pills
 
@@ -76,10 +76,10 @@ Cron jobs (7-day expiry, availability nudge) are pre-wired in `vercel.json`. Sup
 ## 🧱 TECH STACK
 
 - **Next.js 16 App Router + TypeScript strict**
-- **Tailwind CSS 4 + shadcn/ui** (New York) — Sora Bold headings / Inter body / 24px rounded cards / 44px touch targets
+- **Tailwind CSS 4 + shadcn/ui** (New York): Sora Bold headings / Inter body / 24px rounded cards / 44px touch targets
 - **Prisma + SQLite** (this sandbox) → **Supabase Postgres** in production (`/supabase/migrations/0001_init.sql` has the exact SQL incl. RLS)
-- **TikTok oEmbed** — legal iframe embed, never re-uploads creator media
-- **M-Pesa Daraja STK** — simulated (no real payment)
+- **TikTok oEmbed**: legal iframe embed, never re-uploads creator media
+- **M-Pesa Daraja STK**: simulated (no real payment)
 - Africa's Talking OTP (mock) · Google Distance Matrix (mock) · OpenWeather (mock) · Gemini Vision caption parse (mock) · Truecaller age check (mock)
 
 ## 🚀 RUN
@@ -111,9 +111,9 @@ See `.env.example`. Supabase production secrets (`NEXT_PUBLIC_SUPABASE_URL`, `SU
 
 ## 📜 License & content
 
-- TikTok videos are embedded via official **oEmbed iframes** — creator media is never re-uploaded.
+- TikTok videos are embedded via official **oEmbed iframes**: creator media is never re-uploaded.
 - Demo data: real estate names + realistic KES prices; agents, phones and metrics are illustrative.
 
 ## Contribution and license
 
-Issues and pull requests are welcome — please open an issue describing the proposed change before submitting substantive work. No license file is present; the work remains under the author's default copyright. Contact the owner for reuse terms.
+Issues and pull requests are welcome: please open an issue describing the proposed change before submitting substantive work. No license file is present; the work remains under the author's default copyright. Contact the owner for reuse terms.

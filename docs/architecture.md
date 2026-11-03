@@ -1,4 +1,4 @@
-# Keja Halisi — Architecture (Mermaid)
+# Keja Halisi: Architecture (Mermaid)
 
 ## 1. System Architecture
 
@@ -19,7 +19,7 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-  A[Submit TikTok handle + video link] --> B[OTP 6-digit — Africa's Talking + Truecaller >6mo]
+  A[Submit TikTok handle + video link] --> B[OTP 6-digit, Africa's Talking + Truecaller >6mo]
   B --> C[ID + Selfie face match → private vault]
   C --> D{Role?}
   D -->|Agent| E[2 old TikTok videos + 2 referrals]
@@ -37,12 +37,12 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-  L[Paste TikTok link] --> M[oEmbed pull — legal iframe]
+  L[Paste TikTok link] --> M[oEmbed pull, legal iframe]
   M --> N[Gemini extract Price Beds Location]
-  N --> O[Reverse search — 5 handles = Repost flag]
-  O --> P[Price anomaly — 1BR Kile 8k = Bait flag]
+  N --> O[Reverse search, 5 handles = Repost flag]
+  O --> P[Price anomaly, 1BR Kile 8k = Bait flag]
   P --> Q[Evidence checklist: Outside + Gate + Inside + Water + View]
-  Q --> R[Estate select — 17 sub-counties + lat/lng]
+  Q --> R[Estate select, 17 sub-counties + lat/lng]
   R --> S[Google Places cross-check]
   S --> T[Available + pending_review]
   T --> U[Admin approve → approved]
@@ -53,11 +53,11 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-  H[Home — hero + search] --> B[Borough — 6]
-  B --> SC[Sub-county — 17]
-  SC --> E[Estate page — filters + map/list]
+  H[Home, hero + search] --> B[Borough, 6]
+  B --> SC[Sub-county, 17]
+  SC --> E[Estate page, filters + map/list]
   E --> F[Trust filters: Fresh 24h / No fee / Verified / Available + sort response]
-  F --> G[Grid: verified cards — price, distance, weather, freshH, response, fee warning]
+  F --> G[Grid, verified cards: price, distance, weather, freshH, response, fee warning]
   G --> D[Detail: video + photos + trust checks + privacy notice + masked call + report]
   D --> LE[Lead logged masked + audit_events append-only]
 ```
@@ -66,12 +66,12 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-  AV[Available — approved] --> RE[Reported — reason captured]
-  RE --> FL[Flagged — threshold reached]
-  FL --> HI[Hidden — publish_state rejected]
-  HI --> RV[Reviewed — admin outcome + audit event]
-  AV --> EX[Expired — 7d cron]
-  EX --> NC[Re-check nudge — YES/NO SMS]
+  AV[Available, approved] --> RE[Reported, reason captured]
+  RE --> FL[Flagged, threshold reached]
+  FL --> HI[Hidden, publish_state rejected]
+  HI --> RV[Reviewed, admin outcome + audit event]
+  AV --> EX[Expired, 7d cron]
+  EX --> NC[Re-check nudge, YES/NO SMS]
 ```
 
 ## 6. ERD (expanded)
@@ -125,8 +125,8 @@ erDiagram
 ```mermaid
 flowchart TD
   P[Pay KES 999 Pro / 200-500 escrow commitment] --> S1[Enter 07xx phone masked]
-  S1 --> S2[STK Push sent — Till 123456 — phone buzzing]
+  S1 --> S2[STK Push sent, Till 123456, phone buzzing]
   S2 --> S3[Enter M-Pesa PIN mock]
   S3 --> S4[Success tick + confetti + KRA receipt PDF mock]
-  S4 --> N[Toast: STK Push simulated — no real payment was made]
+  S4 --> N[Toast: STK Push simulated, no real payment was made]
 ```

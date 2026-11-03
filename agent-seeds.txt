@@ -1,10 +1,10 @@
-# KEJA HALISI — agent seeds (optional)
+# KEJA HALISI: agent seeds (optional)
 #
 # The TikTok ingest agent reads candidate video links from this file on every
 # scheduled run (see .github/workflows/tiktok-agent.yml). TikTok aggressively
 # bot-walls public search, so this file is the always-available discovery
 # path: open TikTok's search (rental houses nairobi), copy video links, paste
-# them here — one per line. The agent does the rest automatically:
+# them here: one per line. The agent does the rest automatically:
 #   resolve (tikwm) → verify (region/estate/price gates) →
 #   snapshot (ffmpeg frames) → store (link-only listing + Snapshot rows)
 #
